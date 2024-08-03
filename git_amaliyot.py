@@ -17,5 +17,5 @@ try:
         result = sum(mylist2)
 except FileNotFoundError:
     print("Fayl ochishda xatolik!")
-
+#demo uchun ushbu comment qo'shildi
 print(result)
