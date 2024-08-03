@@ -2,12 +2,14 @@
 sonlarni kiritib, ularning yig'indisini ekranga 
 chiqaruvchi dastur yarating."""
 
+#faylga yozish
 try:
     with open("raqamlar.txt", "w") as fayl:
         fayl.write("1 2 3 4 5 6 7 8 9 10")
 except FileNotFoundError:
     print("Fayl ochishda xatolik!")
 
+#fayldan o'qish
 try:
     with open("raqamlar.txt", "r") as fayl:
         mylist = fayl.read().split()
